@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="cz">
+
+<head>
+    <title>Formulář</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="libs/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="bg-danger p-3">
+        <h1 class="display-3 text-light text-center">Responzivní
+            formulář</h1>
+    </header>
+    <main>
+        <h2 class="text-center my-3">Formulář studenta</h2>
+        <div class="container">
+            <form>
+                <div class="mb-3 row">
+                    <label for="jmenoStudenta" class="col-md-3 col-form-label">Jméno
+                        studenta</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" name="jmenoStudenta" id="jmenoStudenta"
+                            placeholder="Zadej jméno" title="Musí být bílé" required />
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="datumNarozeni" class="col-md-3 col-form-label">Datum
+                        narození</label>
+                    <div class="col-md-9">
+                        <input type="date" class="form-control" name="datumNarozeni" id="datumNarozeni"
+                            value="2000-01-01" />
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="email" class="col-md-3 col-form-label">E-mail</label>
+                    <div class="col-md-9">
+                        <input type="email" class="form-control" name="email" id="email"
+                            placeholder="nesnasim@negry.com" required />
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="heslo" class="col-md-3 col-form-label">Heslo</label>
+                    <div class="col-md-9">
+                        <input type="password" class="form-control" name="heslo" id="heslo" placeholder="vyser si vokko"
+                            pattern="^[a-zA-Z0-9] {8-15}\d{2}$" />
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="barva" class="col-md-3 col-form-label">Vyber si barvičku
+                        lasko :3</label>
+                    <div class="col-md-9">
+                        <input type="color" class="form-control" name="barvy" id="barvy" />
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="absence" class="col-md-3 col-form-label">Absence lasko
+                        :3</label>
+                    <div class="col-md-9">
+                        <input type="number" class="form-control" name="absence" id="absence" min="0" max="999"
+                            step="0.2" value="0" />
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="seznam" class="col-md-3 col-form-label">Studijní
+                        obor</label>
+                    <div class="col-md-9">
+                        <select class="form-select form-select-lg" name="obor" id="obor" multiple>
+
+                            <option selected value="IT">Informační
+                                technologie</option>
+                            <option value="SV">Strojírenství</option>
+                            <option value="UO">Umělecké obory</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="pohlavi" class="col-md-3 col-form-label">Pohlaví</label>
+                    <div class="col-md-9">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="woman" value="žena" />
+                            <label class="form-check-label" for>žena</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="man" value="muž" />
+                            <label class="form-check-label" for>muž</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="non-binary"
+                                value="nobinární" />
+                            <label class="form-check-label" for>nebinární</label>
+                        </div>
+                        <div class="col-12 alert alert-info">
+                            Nápověda: Nebinarita. Nebinární lidé nezapadají vůbec nebo zcela do kategorie muž či žena.
+                            Patří sem lidé s fluidním genderem (tzn. genderovou identitou měnící se v průběhu života),
+                            lidé s více gendery najednou, lidé s genderem, který není ani mužský ani ženský, nebo lidé,
+                            kteří žádný gender vůbec nemají.
+                        </div>
+                        <div class="mb-3 row">
+                            <legend for="prohlizec" class="col-md-3 col-form-label">Prohlížeč</legend>
+                            <div class="col-md-9">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" name="chrome" id="chrome"
+                                        value="Google Chrome" checked="checked" />
+
+                                    <label class="form-check-label" for>Google Chrome</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" name="opera" id="opera"
+                                        value="Opera GX" />
+                                    <label class="form-check-label" for>Opera</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" name="edge" id="edge"
+                                        value="MS Edge" />
+                                    <label class="form-check-label" for>MS
+                                        Edge</label>
+                                </div>
+
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="safari" id="safari"
+                                    value="Safari" />
+                                <label class="form-check-label" for>Safari</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">Soubory</label>
+                        <input type="file" class="form-control" name="foto" id="foto" placeholder="vložte soubor"
+                            aria-describedby="fileHelpId" />
+                        <div id="fileHelpId" class="form-text"></div>
+                    </div>
+
+                    </fieldset>
+                    <div class="mb-3 row">
+                        <legend for="poznamka" class="col-sm-3 col-form-label">Poznamka</legend>
+                        <div class="col-sm-9">
+                            <textarea class="form-control" name="poznamka" id="poznamka" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <div class="offset-sm-4 col-sm-8">
+                            <button type="button" class="btn btn-dark">
+                                Odeslat
+                            </button>
+                            <button type="button" class="btn btn-info" data-bs-toggle="collapese"
+                                data-bs-target=".alert">Nápovědy</button>
+                        </div>
+                    </div>
+            </form>
+        </div>
+
+        <!-- Button to Open the Modal -->
+        <button type="button" class="btn btn-primary bg-success" data-bs-toggle="modal" data-bs-target="#myModal">
+            O autorovi
+        </button>
+
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Samuel Svoboda</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-8">Student na SŠPU</div>
+                            <div class="col-4"><img
+                                src="./img/BilaKosile (4).jpg"
+                                class="img-fluid rounded-top col-6 row-6 img-fluid"
+                                alt="MojeFotka"/></div>
+
+                            
+
+                        </div>
+                        
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Zavřít</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="libs/popper.min.js"></script>
+    <script src="libs/bootstrap.min.js"></script>
+</body>
+
+</html>
